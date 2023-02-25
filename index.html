@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-1</title>
+    <!-- tailwind and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="m-6 ">
+            <div class="navbar bg-slate-100 rounded-3xl">
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <div class="flex-none gap-2">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search" class="input input-bordered" />
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                        </label>
+                        <ul tabindex="0"
+                            class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="border-2 mx-6 border-green-500 p-8">
+            <h2 class="font-semibold text-center text-3xl text-emerald-600 mb-6">Found 2 Person</h2>
+            <div class="grid grid-cols-2 gap-6" id="user-container">
+
+            </div>
+        </section>
+        <section class="border-4 mx-6 border-blue-500 p-8 mt-24">
+            <h2 class="font-semibold text-center text-3xl text-blue-600 mb-6">API Challenge-2</h2>
+            <div class="grid grid-cols-2 gap-6" id="car-container">
+                
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <!-- js file  -->
+    <script src="js/practiceProblem.js"></script>
+    <script src="js/api-2-data.js"></script>
+</body>
+
+</html>
